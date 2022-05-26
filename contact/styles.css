@@ -1,0 +1,10 @@
+.main {
+border: solid black 1pt;
+height: 300px;
+background-color: RGB(255,215,0);
+}
+.footer {
+    border: solid blue 1pt;
+    height: 250px;
+    background-color: RGB(191,10,48);
+}
