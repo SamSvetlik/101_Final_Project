@@ -1,3 +1,7 @@
+header {
+    display: flex;
+    justify-content: center;
+}
 .menu {
     background-color: #ffd700;
 
@@ -12,4 +16,161 @@
 }
 .menu > a:hover {
     color: #8a0b2d;
+}
+body {
+    background-color: #ffd700;
+}
+
+#resumePic {
+    max-width: 100%;
+    vertical-align: middle;
+}
+main {
+    max-width: 8.5in;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+    grid-template-areas: 
+    "image nametag nametag"
+    "contact summary summary"
+    "contact workHistory workHistory"
+    "contact work1 work1"
+    "contact work2 work2"
+    "contact work3 work3";
+    background-color: #ececec;
+    color: #3d42e2;
+    font-family: 'Dosis', sans-serif;
+}
+#contact {
+    background-color:#3d42e2;
+    color: #ececec;
+    padding: 15%;
+    grid-area: contact;
+}
+#contact > h3 {
+    font-size: 24pt;
+}
+#workHistory {
+    margin-left: 10px;
+}
+h1 {
+    font-size: 65pt;
+    margin: 10px;
+}
+h2 {
+    margin: 10px;
+    border-bottom: 5px #3d42e2 solid;
+}
+#column2 > h3 {
+    margin: 10px;
+}
+.bar {
+    margin-left: 10px;
+}
+.side {
+    display: inline-block;
+    width: 2.7in;
+    vertical-align: middle;
+}
+h3 {
+    font-size: 24pt;
+}
+#image {
+    grid-area: image;
+}
+#nametag {
+    grid-area: nametag;
+}
+#summary {
+    grid-area: summary;
+}
+#workHistory {
+    grid-area: workHistory;
+}
+#work1 {
+    grid-area: work1;
+}
+#work2 {
+    grid-area: work2;
+}
+#work3 {
+    grid-area: work3;
+}
+@media (max-width: 848px) {
+    main {
+    grid-template-areas: 
+    "image"
+    "nametag"
+    "summary"
+    "workHistory"
+    "work1"
+    "work2"
+    "work3"
+    "contact";
+    justify-items: center;
+    width: fit-content;
+    }
+    .side {
+        
+        max-width: 50%;
+    }
+    #resumePic {
+        max-height: 500px;
+    }
+    #workHistory {
+        margin: auto;
+    }
+    #work1 {
+        width: 100%;
+    }
+    #work2 {
+        width: 100%;
+    }
+    #work3 {
+        width: 100%;
+    }
+    main > div > div> h4 {
+        margin: 10px;
+        width: 100px;
+        text-align: right;
+
+    }
+    main > div > div > p {
+        margin: 10px;
+        text-align: right;
+        width: 100px;
+    }
+    #contact {
+        padding-top: 1%;
+        padding-bottom: 5%;
+    }
+}
+@media (max-width: 564px) {
+    main {
+        grid-template-areas: 
+        "image"
+        "nametag"
+        "summary"
+        "workHistory"
+        "work1"
+        "work2"
+        "work3"
+        "contact";
+        justify-items: center;
+        width: fit-content;
+        }
+    div {
+        margin: auto;
+        text-align: center;
+    }
+    main > div > div> h4 {
+        margin: auto;
+        width: auto;
+        text-align: center
+    }
+    main > div > div > p {
+        margin: auto;
+        width: auto;
+        text-align: center
+    }
 }
