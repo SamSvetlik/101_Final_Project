@@ -1,4 +1,7 @@
-
+nav {
+    border: solid black 1pt;
+    height: 10vh;
+}
 .mainContainer{
     border: solid black 1pt;
     /* height: 70vh; */
@@ -19,4 +22,19 @@
 .image {
     height: 100%;
     width: auto;
+}
+footer {
+    border: solid black 1pt;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    
+}
+.icons 
+{ 
+    height: 7vh;
+   
 }
