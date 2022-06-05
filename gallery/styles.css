@@ -1,0 +1,22 @@
+
+.mainContainer{
+    border: solid black 1pt;
+    /* height: 70vh; */
+    display: flex;
+    /* flex-direction: column; */
+    flex-wrap:wrap ;
+    justify-content: space-around;
+    gap: 5vh 7vw;
+}
+.box {
+    border: solid black 2pt;
+    height: 250px;
+    width: auto;
+    background-size: cover;
+    
+}
+
+.image {
+    height: 100%;
+    width: auto;
+}
