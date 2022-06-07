@@ -1,0 +1,81 @@
+body {
+    background-color: #ffd700;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+.topContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./assets/New-Mexico-State-Flag.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px;
+    font-family: 'Dosis', sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+
+}
+.midContainer {
+    display: grid;
+    grid-template-columns: 114px 114px 114px 114px 114px;
+    grid-template-rows: 114px 114px 114px 114px 114px;
+    grid-template-areas: 
+    ". . top . ."
+    ". . top . ."
+    "left left . right right"
+    ". . bottom . ."
+    ". . bottom . .";
+}
+#top {
+    grid-area: top;
+    height: 114px;
+    width: 114px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    
+}
+#left {
+    grid-area: left;
+    height: 114px;
+    width: 114px;
+    display: flex;
+    align-items: center;
+
+}
+#right {
+    grid-area: right;
+    height: 114px;
+    width: 228px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    text-align: right;
+}
+#bottom {
+    grid-area: bottom;
+    height: 228px;
+    width: 114px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-end;
+}
+a {
+    color: #3d42e2;
+    text-decoration: none;
+}
+#left > a {
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    transform: rotate(180deg)
+}
+#right >a {
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+}
