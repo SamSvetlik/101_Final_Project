@@ -97,6 +97,60 @@ a {
     writing-mode: vertical-rl;
     text-orientation: sideways;
 }
+/* animations */
+.slideUp {
+    animation-name: slideUp;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+}
+@keyframes slideUp {
+    from {
+        transform: translate (0px, 0px);
+    }
+    to {
+        transform: translate(0px, -70px);
+    }
+}
+.slideLeft {
+    animation-name: slideLeft;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+}
+@keyframes slideLeft {
+    from {
+        transform: translate (0px, 0px);
+    }
+    to {
+        transform: translate(-70px, 0px);
+    }
+}
+.slideRight {
+    animation-name: slideRight;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+}
+@keyframes slideRight {
+    from {
+        transform: translate (0px, 0px);
+    }
+    to {
+        transform: translate(70px, 0px);
+    }
+}
+.slideDown {
+    animation-name: slideDown;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+}
+@keyframes slideDown {
+    from {
+        transform: translate (0px, 0px);
+    }
+    to {
+        transform: translate(0px, 70px);
+    }
+}
+
 @media (max-width:912px) {
     .midContainer {
         grid-template-columns: 114px 114px 114px;
