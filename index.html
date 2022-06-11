@@ -16,11 +16,18 @@
 <body>
     <div class="topContainer">
         <div class="midContainer">
-            <div id="top"><a href="./about/about.html">ABOUT </a></div>
-            <div id="left"><a href="./portfolio/portfolio.html">PORTFOLIO </a></div>
-            <div id="right"><a href="./resume/resume.html">RESUMÉ </a></div>
-            <div id="bottom"><a href="./contact/contact.html">CONTACT </a></div>
+            <div id="top"><a onmouseover="slideUp()" onmouseout="reset()" href="./about/about.html">ABOUT </a></div>
+            <div id="left"><a onmouseover="slideLeft()" onmouseout="reset()" href="./portfolio/portfolio.html">PORTFOLIO </a></div>
+            <div id="right"><a onmouseover="slideRight()" onmouseout="reset()" href="./resume/resume.html">RESUMÉ </a></div>
+            <div id="bottom"><a onmouseover="slideDown()" onmouseout="reset()" href="./contact/contact.html">CONTACT </a></div>
+            <div id="topBars"><img src="./assets/top cropped.png"></div>
+            <div id="leftBars"><img src="./assets/left cropped.png"></div>
+            <div id="rightBars"><img src="./assets/right cropped.png"></div>
+            <div id="bottomBars"><img src="./assets/bottom cropped.png"></div>
+<!-- There is some artifacting on the images for the left and right bars that makes them appear incorrectly aligned. -->
+<!-- I think I could fix this with decent image editing software, but I only have MS Paint. -->
         </div>
     </div>
 </body>
+<script src="./scripts.js"></script>
 </html>
