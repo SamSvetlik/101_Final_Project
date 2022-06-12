@@ -1,6 +1,27 @@
+header {
+  display: flex;
+  justify-content: center;
+}
+.menu {
+  background-color: #ffd700;
+
+  width: fit-content;
+  font-size: 16pt;
+  margin-left: 50%;
+  margin-right: 50%;
+  text-align: center;
+}
+.menu > a {
+  color: #bf0a30;
+}
+.menu > a:hover {
+  color: #8a0b2d;
+}
+
+/* Added nav menu before this point. Only thing I changed after was commenting your nav height. */
 nav {
   border: solid black 1pt;
-  height: 10vh;
+  /* height: 10vh; */
   background-color: #29539b;
   background-color: #d4418e;
   background-color: #96c8fb;
