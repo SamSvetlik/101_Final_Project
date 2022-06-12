@@ -25,5 +25,11 @@ img {
     top: -150px;
     left: 37vw;
 }
+p {
+    text-align: center;
+    font-size: larger;
+    font-weight: bolder;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 
 
