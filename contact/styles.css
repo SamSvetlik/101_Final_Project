@@ -1,4 +1,22 @@
+header {
+  display: flex;
+  justify-content: center;
+}
+.menu {
+  background-color: #ffd700;
 
+  width: fit-content;
+  font-size: 16pt;
+  margin-left: 50%;
+  margin-right: 50%;
+  text-align: center;
+}
+.menu > a {
+  color: #bf0a30;
+}
+.menu > a:hover {
+  color: #8a0b2d;
+}
 .navbar{
 /* border: solid black 1pt; */
 height: 10vh;
