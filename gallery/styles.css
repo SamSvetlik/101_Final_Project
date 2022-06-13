@@ -18,21 +18,7 @@ header {
   color: #8a0b2d;
 }
 
-/* Added nav menu before this point. Only thing I changed after was commenting your nav height. */
-nav {
 
-  /* border: solid black 1pt; */
-  height: 10vh;
-  /* background-color: #29539b;
-
-  border: solid black 1pt;
-  /* height: 10vh; */
-  background-color: #29539b;
-
-  background-color: #d4418e;
-  background-color: #96c8fb;
-  background-image: linear-gradient(315deg, #96c8fb 0%, #ddbdfc 74%); */
-}
 .mainContainer {
   /* border: solid black 1pt; */
   /* height: 70vh; */
