@@ -1,0 +1,190 @@
+body {
+    background-color: #ffd700;
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+}
+.topContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url('./assets/New-Mexico-State-Flag.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0px;
+    font-family: 'Dosis', sans-serif;
+    font-size: larger;
+    font-weight: bolder;
+
+}
+.midContainer {
+    display: grid;
+    grid-template-columns: 114px 114px 114px 114px 114px;
+    grid-template-rows: 114px 114px 114px 114px 114px;
+    grid-template-areas: 
+    ". . top . ."
+    ". . topBars . ."
+    "left leftBars . rightBars right"
+    ". . bottomBars . ."
+    ". . bottom . .";
+}
+#top {
+    grid-area: top;
+    height: 114px;
+    width: 114px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;   
+}
+#topBars {
+    grid-area: topBars;
+    display: flex;
+    align-items: flex-start;
+}
+#left {
+    grid-area: left;
+    height: 114px;
+    width: 114px;
+    display: flex;
+    align-items: center;
+}
+#leftBars {
+    grid-area: leftBars;
+    display: flex;
+    justify-content: flex-start;
+}
+#right {
+    grid-area: right;
+    height: 114px;
+    width: 114px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    text-align: right;
+}
+#rightBars {
+    grid-area: rightBars;
+    display: flex;
+    justify-content: flex-end;
+}
+#bottom {
+    grid-area: bottom;
+    height: 114px;
+    width: 114px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: flex-end;
+}
+#bottomBars {
+    grid-area: bottomBars;
+    display: flex;
+    align-items: flex-end;
+}
+a {
+    color: #3d42e2;
+    text-decoration: none;
+}
+#left > a {
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    transform: rotate(180deg)
+}
+#right >a {
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+}
+/* animations */
+.slideUp {
+    animation-name: slideUp;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+}
+@keyframes slideUp {
+    from {
+        transform: translate (0px, 0px);
+    }
+    to {
+        transform: translate(0px, -70px);
+    }
+}
+.slideLeft {
+    animation-name: slideLeft;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+}
+@keyframes slideLeft {
+    from {
+        transform: translate (0px, 0px);
+    }
+    to {
+        transform: translate(-70px, 0px);
+    }
+}
+.slideRight {
+    animation-name: slideRight;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+}
+@keyframes slideRight {
+    from {
+        transform: translate (0px, 0px);
+    }
+    to {
+        transform: translate(70px, 0px);
+    }
+}
+.slideDown {
+    animation-name: slideDown;
+    animation-duration: .25s;
+    animation-fill-mode: forwards;
+}
+@keyframes slideDown {
+    from {
+        transform: translate (0px, 0px);
+    }
+    to {
+        transform: translate(0px, 70px);
+    }
+}
+
+@media (max-width:912px) {
+    .midContainer {
+        grid-template-columns: 114px 114px 114px;
+        grid-template-rows: 114px 114px 114px;
+        grid-template-areas: 
+        "top . bottom"
+        "3 . ."
+        "left . right";
+    }
+    #topBars , #bottomBars , #leftBars , #rightBars {
+        display: none;
+    }
+    #top {
+        align-items: flex-end;
+        justify-content: right;
+    }
+    #bottom {
+        justify-content: left;
+    }
+    #left {
+        align-items: flex-start;
+        justify-content: right;
+    }
+    #left > a {
+        writing-mode: horizontal-tb;
+        text-orientation: sideways;
+        transform: none;
+    }
+    #right {
+        align-items: flex-start;
+        justify-content: left;
+    }
+    #right >a {
+        writing-mode: horizontal-tb;
+        text-orientation: upright;
+    }
+}
